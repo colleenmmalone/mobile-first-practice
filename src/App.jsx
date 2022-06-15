@@ -1,5 +1,11 @@
 // import react from "react";
 
+import fb from './assets/icon_fb.svg';
+import tw from './assets/icon_tw.svg';
+
+import pompadour from './assets/Marquise_de_Pompadour_1756.jpeg';
+import colette from './assets/white-and-green.jpeg';
+
 import './App.scss';
 
 export default function App(){
@@ -7,7 +13,7 @@ export default function App(){
         <>
             {/* <h1>Hello World</h1> */}
             <nav class="site-nav grid">
-    <h1>Stitchineer</h1>
+    <h1>Robes à la Françaises</h1>
     <ul>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -22,22 +28,22 @@ export default function App(){
       <a href="#portfolio" class="button">View my work</a>
     </div>
     <div class="welcome-img">
-      {/* <img src="assets/banner_image.png" alt="pic of planet" /> */}
+      <img src={pompadour} className="flip" alt="mme de pompadour teal dress" />
     </div>
   </section>
   <section id="portfolio">
-    <h3>Some of my Projects</h3>
+    <h3>Some Pretty Dresses</h3>
     <div class="projects grid">
       <a href="#">
-        {/* <img src="assets/project_1.png" alt="space race image" /> */}
-        <h4>Space Race Game</h4>
+        <img src={pompadour} alt="mme de pompadour teal dress" />
+        <h4>Mme de Pompadour, 1765</h4>
       </a>
       <a href="#">
-        {/* <img src="assets/project_2.png" alt="planet boy image" /> */}
-        <h4>Planet Boy API</h4>
+        <img src={colette} alt="white and green dress" />
+        <h4>Colette, 1760</h4>
       </a>
       <a href="#">
-        {/* <img src="assets/project_3.png" alt="captain cosmo image"> */}
+        <img src={colette} alt="captain cosmo image" />
         <h4>Captain Cosmo Blog</h4>
       </a>
 
@@ -47,19 +53,19 @@ export default function App(){
     <h3>Things I Can Do</h3>
     <ul class="grid">
       <li>
-        {/* <img src="assets/comet_1.svg" alt="comet"> */}
+        <img src={colette} alt="comet" />
         <h4>JavaScript</h4>
       </li>
       <li>
-        {/* <img src="assets/comet_2.svg" alt="comet"> */}
+      <img src={colette} alt="comet" />
         <h4>React</h4>
       </li>
       <li>
-        {/* <img src="assets/comet_3.svg" alt="comet"> */}
+      <img src={colette} alt="comet" />
         <h4>Firebase</h4>
       </li>
       <li>
-        {/* <img src="assets/comet_4.svg" alt="comet"> */}
+      <img src={colette} alt="comet" />
         <h4>Flutter</h4>
       </li>
     </ul>
@@ -79,8 +85,8 @@ export default function App(){
     <div class="grid">
       <p class="copyright">Copyright 2020 Cosmo Junkie</p>
       <ul class="social">
-        {/* <li><a href="#"><img src="assets/icon_fb.svg" alt="facebook"></a></li> */}
-        {/* <li><a href="#"><img src="assets/icon_tw.svg" alt="twitter"></a></li> */}
+        <li><a href="#"><img src={fb} alt="facebook" /></a></li>
+        <li><a href="#"><img src={tw} alt="twitter" /></a></li>
       </ul>
     </div>
   </footer>
